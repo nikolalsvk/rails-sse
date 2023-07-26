@@ -1,24 +1,12 @@
-# README
+# Rails SSE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a repository that goes together with [a blog post about Server-Sent Events in Rails](https://pragmaticpineapple.com/using-server-sent-events-to-stream-data-in-rails/).
 
-Things you may want to cover:
+## Running
 
-* Ruby version
+```
+bundle install
+bin/rails server
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then, visit http://localhost:3000 and observe how events are coming in from the server.
