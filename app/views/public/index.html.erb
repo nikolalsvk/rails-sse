@@ -22,7 +22,7 @@
     })
 
     eventSource.addEventListener("error", (event) => {
-      if (event.eventPhase == EventSource.CLOSED) {
+      if (event.eventPhase === EventSource.CLOSED) {
         eventSource.close()
         console.log("Event Source Closed")
       }
@@ -36,7 +36,7 @@
   })
 
   document.getElementById("start").addEventListener("click", (e) => {
-    if (eventSource.readyState == EventSource.CLOSED) {
+    if (eventSource.readyState === EventSource.CLOSED) {
       start()
     }
   })
